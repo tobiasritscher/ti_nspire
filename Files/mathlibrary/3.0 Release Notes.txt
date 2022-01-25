@@ -1,0 +1,40 @@
+3.0 Release Notes
+
+-Added a Lua script that allows fetch("") to bring up images. Just copy and paste the page with the image into your other document.
+-Overhauled the geometry menu so that theories from geometry class can be browsed. Some of these entries, such as "alternate exterior angle", bring up an image.
+
+-Updated nearly all the Calculus III entries for ease of reading.
+-Added entries for systems of differential equations.
+-Added a menu for Fourier series.
+-Included Physics I and II formulas, accessible through fetch("physics"). This includes entries for units, such as conversion from Newtons to dyne.
+-Calculus I: Added an entry on particular solutions to integration. Updated "Second Fundamental Theorem of Calculus" to include the alternative definition of indefinite integration often used with this.
+
+New programs and program updates:
+
+-Updated arctrig("arctan(tan(22))") to return both answers for both radian and degrees modes.
+-Linear algebra: Replaced the Vandermonde matrix program with alternant(basis,independent variable list,matrix of coordinate columns for each independent variable) Generates the alternant matrix for any basis, such as {1,X,x^2} for a quadratic function or {1,x^2,y^2} for a paraboloid on the z-axis.
+
+
+2.3 Release Notes
+
+New programs:
+Statistics programs have been split off into a second document, to make it easier to browse the library.
+
+1) multiregression(basis,matrix) See fetch("multiple linear regression") for a fuller explanation.
+2) partitions(r_list) Finds the number of possible ways to partition a set of n elements into sets of r_i elements.
+3) hypergeomPdf(n,r,N,x)
+4) hypergeomCdf(n,r,N,x_1,x_2)
+
+These are intended to remove the need to create a table:
+5) invDiscretePdf(P,f(x),xdomain,"left")  Find x_0 closest to P on the side of the distribution left or right of the peak.
+6) invDiscreteCdf(P,f(x),xdomain,">=") Returns the x_0 such that P_table is barely = P; lower-tailed like invNorm.
+7) invBinomPdf(P,n,p)
+8) invBinomCdf(P,n,p,">=")
+9) invPoissPdf(P,n,lambda)
+10) invPoissCdf(P,n,lambda,">=") 
+11) invHypergeomPdf(P,n,r,N)
+12) invHypergeomCdf(P,n,r,N,">=")
+
+New entries:
+-Added all entries covering Differential Equations I. see fetch("differential equations") for the main menu.
+-Added nonparametric, ANOVA-related formulas, and linear and multiple regression to the statistics section.
